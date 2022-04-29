@@ -4,7 +4,8 @@ const {Router}= express;
 const routerCarrito = new Router();
 
 //const {crearCarrito, borrarCarrito, obtenerProductosCarrito, agregarProductoAlCarrito, borrarProductoDelCarrito} = require('../logica_negocio.js')
-import {obtenerCarritos, crearCarrito, borrarCarrito, obtenerProductosCarrito, agregarProductoAlCarrito, borrarProductoDelCarrito} from '../logica_negocio.js';
+//import {obtenerCarritos, crearCarrito, borrarCarrito, obtenerProductosCarrito, agregarProductoAlCarrito, borrarProductoDelCarrito} from '../logica_negocio.js';
+import {obtenerCarritos, crearCarrito, borrarCarrito, obtenerProductosCarrito, agregarProductoAlCarrito, borrarProductoDelCarrito} from '../daos/index.js';
 
 //routerCarrito.use(express.json());
 //routerCarrito.use(express.urlencoded({ extended: true }))

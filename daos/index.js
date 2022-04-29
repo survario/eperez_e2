@@ -1,5 +1,5 @@
-import { productosDao } from './daos/productos/productosIndex.js'
-import { carritosDao } from './daos/carritos/carritosIndex.js'
+import { productosDao } from './productos/productosIndex.js'
+import { carritosDao } from './carritos/carritosIndex.js'
 
 async function obtenerProductos() {
     let catalogo=[];

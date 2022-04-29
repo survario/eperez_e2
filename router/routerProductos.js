@@ -3,7 +3,8 @@ const {Router}= express;
 const routerProductos = new Router();
 
 //const {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} = require('../logica_negocio.js')
-import {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} from '../logica_negocio.js';
+//import {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} from '../logica_negocio.js';
+import {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} from '../daos/index.js';
 
 //routerProductos.use(express.json());
 //routerProductos.use(express.urlencoded({ extended: true }))
