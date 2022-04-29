@@ -6,7 +6,7 @@ Este proyecto incluye la carpeta \bMongo para Pruebas
 
 Ejecute desde cmd CLI:
 
-mongod --dbpath C:\<RUTA de la App>\eperez_e2\bMongo
+mongod --dbpath C:\<RUTA de la App>\bMongo
 
 Para utilizar otra carpeta, ejecute desde cmd CLI:
 
