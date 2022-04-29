@@ -3,12 +3,10 @@ import config from '../../config.js'
 let carritosDao
 
 //process.env.PERS
-//const db= 'firebase';
+const db= 'firebase';
 
-const db= 'mongodb';
-
+//const db= 'mongodb';
 //const db = process.env.DBCARR || 'memoria'
-
 
 switch (db) {
     case 'archivo':

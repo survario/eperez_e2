@@ -12,6 +12,10 @@ Para utilizar otra carpeta, ejecute desde cmd CLI:
 
 mongod --dbpath C:\<RUTA de la Carpeta>
 
+Usar base de datos de nombre "ecommerce"
+
+Desde mongo, ejecutar: use ecommerce
+
 
 Dependencias utilizadas: express, mongoose, firebase-admin
 
