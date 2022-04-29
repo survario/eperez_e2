@@ -1,13 +1,11 @@
 import ContenedorFirebase from '../../contenedores/ContenedorFirebase.js'
 
-//const uriMongoDb = 'mongodb://localhost:27017/ecommerce';
-//import {connectionStringProductos} from '../../config.js';
+//const URL = 'mongodb://localhost:27017/ecommerce';
 
 class ProductosDaoFirebase extends ContenedorFirebase{
 
     constructor(){
-        super('productos')
-        
+        super('productos')       
     }   
 }
 

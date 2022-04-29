@@ -110,8 +110,7 @@ class ContenedorArchivo{
             //throw new Error('ID ingresado no valido');
             return null;
         }
-    }
-    
+    }  
 }
 
 export default ContenedorArchivo;

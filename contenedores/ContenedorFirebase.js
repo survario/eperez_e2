@@ -2,7 +2,6 @@ import fs from 'fs'
 import admin from "firebase-admin"
 import config from '../config.js'
 
-//const serviceAccount = firebase.pathCnxCredentials
 const serviceAccount = JSON.parse(fs.readFileSync(config.firebase.pathCnxCredentials))
 
 admin.initializeApp({
@@ -116,7 +115,6 @@ class ContenedorFirebase{
         } catch (err){
             throw new Error(`Error al borrar catálogo: ${err}`);
         }
-
     }
 
     async changeById(id, nuevo){

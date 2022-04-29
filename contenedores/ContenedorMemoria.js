@@ -67,8 +67,7 @@ class ContenedorMemoria{
         } else {
             return null;
         }
-    }
-    
+    }    
 }
 
 export default ContenedorMemoria;

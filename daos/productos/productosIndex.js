@@ -2,11 +2,9 @@ import config from '../../config.js'
 
 let productosDao
 
-//process.env.PERS
 //const db= 'firebase';
-//const db = process.env.DBPROD || 'memoria'
-//const db = process.env.DBPROD || 'mongodb'
-const db =  'mongodb' || 'firebase'
+const db =  'mongodb' 
+//const db =  'mongodb' || 'firebase'
 
 switch (db) {
     case 'archivo':

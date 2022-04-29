@@ -4,8 +4,7 @@ import config from '../../config.js';
 class CarritosDaoArchivo extends ContenedorArchivo{
 
     constructor(){
-        super(config.archivo.carritosFilePath)
-        
+        super(config.archivo.carritosFilePath)       
     }
 
     async desconectar(){

@@ -1,5 +1,4 @@
 const uriMongoDb= 'mongodb://localhost:27017/ecommerce';
-
 //const connectionStringProductos = uriMongoDb;
 //const connectionStringCarritos = uriMongoDb;
 
@@ -23,5 +22,4 @@ export default {
         productosFilePath: './productos.txt',
         carritosFilePath: './carritos.txt'
     }
-
 }

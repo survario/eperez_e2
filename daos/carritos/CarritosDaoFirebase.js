@@ -4,9 +4,7 @@ class CarritosDaoFirebase extends ContenedorFirebase{
 
     constructor(){
         
-        super('carritos')
-        
-        
+        super('carritos')       
     } 
 }
 

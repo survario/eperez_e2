@@ -1,3 +1,4 @@
+import firebase from 'firebase-admin';
 import { productosDao } from './productos/productosIndex.js'
 import { carritosDao } from './carritos/carritosIndex.js'
 
@@ -58,6 +59,7 @@ async function obtenerProductosCarrito(id) {
     }  
 }
 
+/*
 async function agregarProductoAlCarrito(id_carrito, producto){
     let carrito;
     carrito= await carritosDao.getById(id_carrito);
@@ -77,12 +79,34 @@ async function agregarProductoAlCarrito(id_carrito, producto){
         return null;
     }
 }
+*/
+
+async function agregarProductoAlCarrito(id_carrito, producto){
+    try {
+        let produ = await productosDao.getById(producto)
+        const carrito= await carritosDao.getById(id_carrito);
+        //const carrito= await this.getById(id_carrito);
+        
+        produ.id = Number(produ.id) + 6
+        produ.timestamp = Date.now();
+
+        const db = firebase.firestore()
+        const query = db.collection('carritos')
+        const doc = query.doc(id_carrito)
+
+        const item = await doc.update({
+            productos: firebase.firestore.FieldValue.arrayUnion(String(produ))
+        })
+        return true
+    } catch (error) {
+        return false
+    }
+}
 
 async function borrarProductoDelCarrito(id_carrito, id_prod){
     let carrito;
     carrito= await carritosDao.getById(id_carrito);
-    
-    
+     
     if(carrito.productos.some( elem => elem.id ==id_prod )){
 
         const index = carrito.productos.findIndex( elem => elem.id == id_prod);

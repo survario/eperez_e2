@@ -112,8 +112,7 @@ class ContenedorMongoDB{
             let anterior;
             const index = contenidoJsonArray.findIndex( elem => elem.id == id);
             anterior =contenidoJsonArray[index];
-
-            //contenidoJsonArray[index] = nuevo;
+            
             try{
                 
                 await this.coleccion.updateOne({id: id},  nuevo);
@@ -131,7 +130,6 @@ class ContenedorMongoDB{
             return null;
         }
     }
-    
 }
 
 export default ContenedorMongoDB;

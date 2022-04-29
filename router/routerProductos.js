@@ -2,8 +2,6 @@ import express from 'express';
 const {Router}= express;
 const routerProductos = new Router();
 
-//const {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} = require('../logica_negocio.js')
-//import {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} from '../logica_negocio.js';
 import {obtenerProductos, obtenerProductoPorId, agregarProducto, actualizarProducto, borrarProducto} from '../daos/index.js';
 
 //routerProductos.use(express.json());
@@ -18,14 +16,12 @@ function adminAuthorization(req, res, next){
     } else {
         res.send({ error : -1, descripcion: `Acceso a ruta ${req.baseUrl}${req.path} con método ${req.method}  no autorizado`})
     }
-    
 }
 
 routerProductos.get('/', async (req, res) => {
     let catalogo =[];
     catalogo = await obtenerProductos();
-    res.json(catalogo);
-    
+    res.json(catalogo); 
 })
 
 routerProductos.get('/:id', async (req, res) => {
@@ -48,7 +44,8 @@ routerProductos.post('/', adminAuthorization, async (req, res) => {
     res.json(prod);
 })
 
-
+//RUTA delete NO IMPLEMENTADA
+/*
 routerProductos.put('/:id',adminAuthorization, async (req, res) => {
     const id = req.params.id;
     const nuevo = req.body;
@@ -60,11 +57,15 @@ routerProductos.put('/:id',adminAuthorization, async (req, res) => {
         res.send(`No existe producto con id: ${id}`);
     }
 })
+*/
 
+//RUTA delete NO IMPLEMENTADA
+/*
 routerProductos.delete('/:id',adminAuthorization ,async(req, res) => {
     const id = req.params.id;
     await borrarProducto(id);
     res.send(`Elemento con id ${id} borrado`)
 });
+*/
 
 export default routerProductos;
