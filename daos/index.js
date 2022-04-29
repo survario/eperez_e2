@@ -58,10 +58,12 @@ async function obtenerProductosCarrito(id) {
     }  
 }
 
-async function agregarProductoAlCarrito(id_carrito, prod){
+async function agregarProductoAlCarrito(id_carrito, producto){
     let carrito;
     carrito= await carritosDao.getById(id_carrito);
-    
+    let prod
+    prod = await productosDao.getById(producto)
+
     if(carrito){
     
     prod.id = carrito.productos.length > 0 ? carrito.productos[carrito.productos.length-1].id + 1 : 1;

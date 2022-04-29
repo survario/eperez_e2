@@ -1,8 +1,14 @@
 Emmanuel Perez - Entrega 2 - Avance Proyecto
 
-Para ejecutar la aplicación, es necesario levantar servidor local mongodb
+Para ejecutar la aplicación, es necesario levantar un servidor local mongodb en una carpeta a elección.
+
+Este proyecto incluye la carpeta \miBaseMongo para Pruebas
 
 Ejecute desde cmd CLI:
+
+mongod --dbpath C:\<RUTA de la App>\eperez_e2\miBaseMongo
+
+Para utilizar otra carpeta, ejecute desde cmd CLI:
 
 mongod --dbpath C:\<RUTA de la Carpeta>
 

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Escuadra",
+    "price": "123.45",
+    "url": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+    "description": "Escuadra de aluminio de 50 cm de largo",
+    "code": "ESC1045",
+    "stock": 100
+  },
+  {
+    "name": "Televisor",
+    "price": "334.59",
+    "url": "https://cdn3.iconfinder.com/data/icons/education-209/64/tv.png",
+    "description": "SONY 4K - Televisor Ultra High Definition",
+    "code": "CALC678",
+    "stock": 100
+  },
+  {
+    "name": "Calculadora",
+    "price": "234.56",
+    "url": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "description": "Calculadora Casio",
+    "code": "FTUI976",
+    "stock": "100"
+  },
+  {
+    "name": "Calc. Cientifica",
+    "price": "134.56",
+    "url": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "description": "Del tipo Cientifica",
+    "code": "DKF346",
+    "stock": "100"
+  }
+]
