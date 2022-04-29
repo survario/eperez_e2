@@ -33,7 +33,7 @@ Archivo productos.txt incluye algunos ejemplos para pruebas.
 
 a- Cambiar el archivo de credenciales ubicado en la carpeta bd/ por el archivo correspondiente.
 
-b- En el archivo config.js cambiar la URL en firebase: { pathCnxCredentials: <URL de la base de datos Firebase> }
+b- En el archivo config.js cambiar la URL en firebase: { pathCnxCredentials: "URL de la base de datos Firebase" }
 
 
 2. Para correr todas las colecciones desde MongoDB:
