@@ -1,9 +1,14 @@
 Emmanuel Perez - Entrega 2 - Avance Proyecto
 
-Es necesario levantar servidor local mongodb
+Para ejecutar la aplicación, es necesario levantar servidor local mongodb
+
 Ejecute desde cmd CLI:
 
 mongod --dbpath C:\<RUTA de la Carpeta>
+
+
+Dependencias utilizadas: express, mongoose, firebase-admin
+
 
 Rutas implementadas:
 
