@@ -1,0 +1,19 @@
+{
+  "type":"module",
+  "name": "eperez_e2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "firebase-admin": "^10.1.0",
+    "mongoose": "^6.3.1"
+  }
+}
