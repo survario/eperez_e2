@@ -63,7 +63,6 @@ class ContenedorFirebase{
     
     async getAll(){
         try{
-            //let productos = await Model.find({},{__v: 0});
             const ops = []
             const productos = await this.coleccion.get();
             productos.forEach(doc => {

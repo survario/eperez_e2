@@ -85,9 +85,22 @@ async function agregarProductoAlCarrito(id_carrito, producto){
     try {
         let produ = await productosDao.getById(producto)
         const carrito= await carritosDao.getById(id_carrito);
-        //const carrito= await this.getById(id_carrito);
-        
-        produ.id = Number(produ.id) + 6
+        let aux = carrito.productos.length
+        let ultimo = JSON.stringify(carrito.productos[aux-1])
+        //console.log(JSON.parse(ultimo))
+
+
+        // No logré recibir el valor de ultimo.id  (carrito.productos[carrito.productos.length-1].id) , la consola arroja undefined
+
+
+        if (aux > 0){
+            //let ultimoId = carrito.productos[carrito.productos.length-1].id
+            //produ.id = ultimoId+1
+            //console.log(produ.id)
+            produ.id = aux+1
+        } else {
+            produ.id = 1
+        }
         produ.timestamp = Date.now();
 
         const db = firebase.firestore()
@@ -106,11 +119,12 @@ async function agregarProductoAlCarrito(id_carrito, producto){
 async function borrarProductoDelCarrito(id_carrito, id_prod){
     let carrito;
     carrito= await carritosDao.getById(id_carrito);
+    let pr = carrito.productos[id_prod-1]
      
-    if(carrito.productos.some( elem => elem.id ==id_prod )){
+    if(pr !== undefined && Object.keys(pr).length !== 0){
 
-        const index = carrito.productos.findIndex( elem => elem.id == id_prod);
-        carrito.productos.splice(index,1);
+        //const index = carrito.productos.findIndex( elem => elem.id == id_prod);
+        carrito.productos.splice(id_prod-1, 1, {});
         carritosDao.changeById(id_carrito, carrito);
         return carrito
         

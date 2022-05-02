@@ -44,8 +44,6 @@ routerProductos.post('/', adminAuthorization, async (req, res) => {
     res.json(prod);
 })
 
-//RUTA delete NO IMPLEMENTADA
-/*
 routerProductos.put('/:id',adminAuthorization, async (req, res) => {
     const id = req.params.id;
     const nuevo = req.body;
@@ -57,15 +55,11 @@ routerProductos.put('/:id',adminAuthorization, async (req, res) => {
         res.send(`No existe producto con id: ${id}`);
     }
 })
-*/
 
-//RUTA delete NO IMPLEMENTADA
-/*
 routerProductos.delete('/:id',adminAuthorization ,async(req, res) => {
     const id = req.params.id;
     await borrarProducto(id);
     res.send(`Elemento con id ${id} borrado`)
 });
-*/
 
 export default routerProductos;

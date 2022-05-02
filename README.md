@@ -59,9 +59,9 @@ GET localhost:8080/api/productos/:id
 
 POST localhost:8080/api/productos
 
-PUT localhost:8080/productos/:id **** NO IMPLEMENTADA
+PUT localhost:8080/api/productos/:id
 
-DELETE localhost:8080/productos/:id **** NO IMPLEMENTADA
+DELETE localhost:8080/api/productos/:id
 
 GET localhost:8080/api/carrito
 
@@ -71,6 +71,6 @@ POST localhost:8080/api/carrito
 
 POST localhost:8080/api/carrito/:id/productos/:id_prod
 
-DELETE localhost:8080/carrito/:id **** NO IMPLEMENTADA
+DELETE localhost:8080/api/carrito/:id
 
-DELETE localhost:8080/carrito/:id/productos/:id_prod **** NO IMPLEMENTADA
+DELETE localhost:8080/api/carrito/:id/productos/:id_prod
