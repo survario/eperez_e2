@@ -1,6 +1,10 @@
 Emmanuel Perez - Entrega 2 - Avance Proyecto - Firebase / MongoDB
 
-Para ejecutar la aplicación, es necesario levantar un servidor local mongodb en una carpeta a elección.
+Para ejecutar la aplicación, es necesario: 
+
+1. Configurar Firebase según se explica en este documento.
+
+2. levantar un servidor local mongodb en una carpeta a elección.
 
 Este proyecto incluye la carpeta \bMongo para Pruebas
 
@@ -29,9 +33,9 @@ el método post producto by id en carrito by id busca los productos en mongodb y
 Archivo productos.txt incluye algunos ejemplos para pruebas.
 
 
-1. Para conectar a otra Firebase Database:
+1. Para configurar Firebase Database:
 
-a- Cambiar el archivo de credenciales ubicado en la carpeta bd/ por el archivo correspondiente.
+a- Agregar el archivo .json con las credenciales correspondientes en la carpeta bd/
 
 b- En el archivo config.js cambiar la URL en firebase: { pathCnxCredentials: "URL de la base de datos Firebase" }
 

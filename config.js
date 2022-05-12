@@ -16,7 +16,7 @@ export default {
         }
     },
     firebase: {
-        pathCnxCredentials: './bd/clase20-61ac3-firebase-adminsdk-o8bpb-0b8b961381.json'
+        pathCnxCredentials: './bd/NOMBREDELARCHIVO.json'
     },
     archivo: {
         productosFilePath: './productos.txt',
